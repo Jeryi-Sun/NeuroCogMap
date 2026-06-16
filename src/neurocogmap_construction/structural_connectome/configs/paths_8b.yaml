@@ -1,0 +1,84 @@
+# SAE权重文件路径配置（Llama-3.1-8B + LXR-8x）
+model_key: "llama3_1_8b"
+sae_weights_base_dir: ""
+
+# 模型与 SAE 信息（用于区分 Gemma / Llama LXR-8x 的加载逻辑）
+model_name: "meta-llama/Llama-3.1-8B"
+sae_release: "llama_scope_lxr_8x"
+
+# Parcel分配文件路径（8B，对应 run_intervention_8b.sh）
+parcel_assignments_path: "artifacts/neurocogmap_atlas/llama3_1_8b/latent_parcel_assignments.json"
+
+# 输出目录
+output_dir: ""
+
+# SAE层配置（32 层 LXR-8x，对应 run_intervention_8b.sh 中的 SAE_PATHS）
+sae_layers:
+  - layer: 0
+    path: "Llama3_1-8B-Base-L0R-8x"
+  - layer: 1
+    path: "Llama3_1-8B-Base-L1R-8x"
+  - layer: 2
+    path: "Llama3_1-8B-Base-L2R-8x"
+  - layer: 3
+    path: "Llama3_1-8B-Base-L3R-8x"
+  - layer: 4
+    path: "Llama3_1-8B-Base-L4R-8x"
+  - layer: 5
+    path: "Llama3_1-8B-Base-L5R-8x"
+  - layer: 6
+    path: "Llama3_1-8B-Base-L6R-8x"
+  - layer: 7
+    path: "Llama3_1-8B-Base-L7R-8x"
+  - layer: 8
+    path: "Llama3_1-8B-Base-L8R-8x"
+  - layer: 9
+    path: "Llama3_1-8B-Base-L9R-8x"
+  - layer: 10
+    path: "Llama3_1-8B-Base-L10R-8x"
+  - layer: 11
+    path: "Llama3_1-8B-Base-L11R-8x"
+  - layer: 12
+    path: "Llama3_1-8B-Base-L12R-8x"
+  - layer: 13
+    path: "Llama3_1-8B-Base-L13R-8x"
+  - layer: 14
+    path: "Llama3_1-8B-Base-L14R-8x"
+  - layer: 15
+    path: "Llama3_1-8B-Base-L15R-8x"
+  - layer: 16
+    path: "Llama3_1-8B-Base-L16R-8x"
+  - layer: 17
+    path: "Llama3_1-8B-Base-L17R-8x"
+  - layer: 18
+    path: "Llama3_1-8B-Base-L18R-8x"
+  - layer: 19
+    path: "Llama3_1-8B-Base-L19R-8x"
+  - layer: 20
+    path: "Llama3_1-8B-Base-L20R-8x"
+  - layer: 21
+    path: "Llama3_1-8B-Base-L21R-8x"
+  - layer: 22
+    path: "Llama3_1-8B-Base-L22R-8x"
+  - layer: 23
+    path: "Llama3_1-8B-Base-L23R-8x"
+  - layer: 24
+    path: "Llama3_1-8B-Base-L24R-8x"
+  - layer: 25
+    path: "Llama3_1-8B-Base-L25R-8x"
+  - layer: 26
+    path: "Llama3_1-8B-Base-L26R-8x"
+  - layer: 27
+    path: "Llama3_1-8B-Base-L27R-8x"
+  - layer: 28
+    path: "Llama3_1-8B-Base-L28R-8x"
+  - layer: 29
+    path: "Llama3_1-8B-Base-L29R-8x"
+  - layer: 30
+    path: "Llama3_1-8B-Base-L30R-8x"
+  - layer: 31
+    path: "Llama3_1-8B-Base-L31R-8x"
+
+# 计算参数（Llama-3.1-8B + LXR-8x：每层 32768 latents，见 Llama3_1-8B-sae-loading 规则）
+latent_per_layer: 32768
+n_parcels: 240

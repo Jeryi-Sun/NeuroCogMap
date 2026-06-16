@@ -1,0 +1,22 @@
+# SAE权重文件路径配置（9b-it）
+model_key: "gemma2_9b_it"
+sae_weights_base_dir: ""
+
+# Parcel分配文件路径（9b-it，对应 run_intervention_9b.sh）
+parcel_assignments_path: "artifacts/neurocogmap_atlas/gemma2_9b_it/latent_parcel_assignments.json"
+
+# 输出目录
+output_dir: ""
+
+# SAE层配置（与 run_intervention_9b.sh 中的 SAE_PATHS 对齐）
+sae_layers:
+  - layer: 9
+    path: "layer_9/width_16k/average_l0_88"
+  - layer: 20
+    path: "layer_20/width_16k/average_l0_91"
+  - layer: 31
+    path: "layer_31/width_16k/average_l0_76"
+
+# 计算参数
+latent_per_layer: 16384
+n_parcels: 270

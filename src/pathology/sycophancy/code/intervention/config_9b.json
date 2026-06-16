@@ -1,0 +1,29 @@
+{
+  "model_name": "google/gemma-2-9b-it",
+  "sae_release": "gemma-scope-9b-it-res",
+  "sae_local_base_dir": "/path/to/local_models/gemma-scope-9b-it-res",
+  "parcel_json_path_template": "/path/to/project_root/safety_explanation/sycophancy/results/analysis_output/answer_gemma-2-9b-it/parcel_level/top_anomalous_parcels.json",
+  "latent_parcel_assignments_path": "/path/to/project_root/neural_area/divide_area_by_sae_act/cluster_output_9b_it/clustering_results_sentence_prep0.03_0.8_svdvar0p80_parcels20_iter50_spatial0.01_nparcels270/latent_parcel_assignments.json",
+  "max_activation_dir": "/path/to/project_root/neural_area/connect_cap_parcel/results/steer_activation",
+  "results_dir": "/path/to/project_root/safety_explanation/sycophancy/results/intervention",
+  "is_instruct": true,
+  "lambda_scale": 0.3,
+  "smooth": 80.0,
+  "min_scale": -1.0,
+  "max_scale": 1.0,
+  "max_saes": 10,
+  "max_samples": 1500,
+  "enable_evaluation": false,
+  "vllm_url": "http://0.0.0.0:8001/v1",
+  "api_key": "abcabc",
+  "dataset_dir": "/path/to/project_root/safety_explanation/sycophancy/results/answer_gemma-2-9b-it",
+  "use_incontext": false,
+  "sae_paths": [
+    "layer_9/width_16k/average_l0_88",
+    "layer_20/width_16k/average_l0_91",
+    "layer_31/width_16k/average_l0_76"
+  ],
+  "intervention_strengths": [0.5],
+  "parcel_groups": []
+}
+

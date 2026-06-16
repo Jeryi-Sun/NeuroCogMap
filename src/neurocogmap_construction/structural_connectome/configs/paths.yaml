@@ -1,0 +1,71 @@
+# SAE权重文件路径配置
+# Public release users should pass --sae_weights_base_dir or set
+# NEUROCOGMAP_GEMMA2_SAE_DIR. build_parcel_connections.py writes an
+# effective config under NEUROCOGMAP_OUTPUT_DIR before running.
+model_key: "gemma2_2b"
+sae_weights_base_dir: ""
+
+# Parcel分配文件路径
+parcel_assignments_path: "artifacts/neurocogmap_atlas/gemma2_2b/latent_parcel_assignments.json"
+
+# 输出目录
+output_dir: ""
+
+# SAE层配置
+sae_layers:
+  - layer: 0
+    path: "layer_0/width_16k/average_l0_105"
+  - layer: 1
+    path: "layer_1/width_16k/average_l0_102"
+  - layer: 2
+    path: "layer_2/width_16k/average_l0_141"
+  - layer: 3
+    path: "layer_3/width_16k/average_l0_59"
+  - layer: 4
+    path: "layer_4/width_16k/average_l0_124"
+  - layer: 5
+    path: "layer_5/width_16k/average_l0_68"
+  - layer: 6
+    path: "layer_6/width_16k/average_l0_70"
+  - layer: 7
+    path: "layer_7/width_16k/average_l0_69"
+  - layer: 8
+    path: "layer_8/width_16k/average_l0_71"
+  - layer: 9
+    path: "layer_9/width_16k/average_l0_73"
+  - layer: 10
+    path: "layer_10/width_16k/average_l0_77"
+  - layer: 11
+    path: "layer_11/width_16k/average_l0_80"
+  - layer: 12
+    path: "layer_12/width_16k/average_l0_82"
+  - layer: 13
+    path: "layer_13/width_16k/average_l0_84"
+  - layer: 14
+    path: "layer_14/width_16k/average_l0_84"
+  - layer: 15
+    path: "layer_15/width_16k/average_l0_78"
+  - layer: 16
+    path: "layer_16/width_16k/average_l0_78"
+  - layer: 17
+    path: "layer_17/width_16k/average_l0_77"
+  - layer: 18
+    path: "layer_18/width_16k/average_l0_74"
+  - layer: 19
+    path: "layer_19/width_16k/average_l0_73"
+  - layer: 20
+    path: "layer_20/width_16k/average_l0_71"
+  - layer: 21
+    path: "layer_21/width_16k/average_l0_70"
+  - layer: 22
+    path: "layer_22/width_16k/average_l0_72"
+  - layer: 23
+    path: "layer_23/width_16k/average_l0_75"
+  - layer: 24
+    path: "layer_24/width_16k/average_l0_73"
+  - layer: 25
+    path: "layer_25/width_16k/average_l0_116"
+
+# 计算参数
+latent_per_layer: 16384
+n_parcels: 270

@@ -1,0 +1,6 @@
+./run_extract_all_participant_parcel_activations.sh  ruggeri2022globalizability_exp1_csv
+./run_extract_all_participant_parcel_activations.sh  hilbig2014generalized_exp1_csv
+./run_extract_all_participant_parcel_activations.sh  hebart2023things_exp1_csv
+./run_extract_all_participant_parcel_activations.sh  tomov2021multitask_exp1_csv
+./run_extract_all_participant_parcel_activations.sh  wu2018generalisation_exp1_csv
+./run_extract_all_participant_parcel_activations.sh  enkavi2019adaptivenback_exp1_csv

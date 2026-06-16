@@ -1,0 +1,43 @@
+# Frozen direct dependency set for the Figure 5 / Figure 6 environment.
+# Generated from the local conda env "lit" on 2026-06-10.
+# Python version used during release testing: 3.10.15.
+#
+# This is a clean release-facing freeze of direct dependencies only. It excludes
+# local editable installs, private Git URLs, notebooks, debug tools, and unrelated
+# packages from the full development environment.
+
+torch==2.6.0
+transformers==4.53.2
+transformer-lens==2.16.1
+accelerate==1.4.0
+schedulefree==1.4.1
+datasets==2.21.0
+huggingface-hub==0.33.4
+safetensors==0.4.5
+sentence-transformers==5.1.0
+
+numpy==1.26.4
+scipy==1.14.1
+pandas==2.2.3
+scikit-learn==1.6.1
+statsmodels==0.14.5
+networkx==3.2.1
+matplotlib==3.9.3
+seaborn==0.13.2
+plotly==5.24.1
+tqdm==4.67.1
+pyyaml==6.0.2
+natsort==8.4.0
+h5py==3.15.1
+
+nibabel==5.3.2
+nilearn==0.12.1
+neuromaps==0.0.5
+gensim==4.4.0
+gdown==5.2.0
+
+einops==0.7.0
+jaxtyping==0.2.38
+simple-parsing==0.1.7
+beartype==0.14.1
+openai==1.55.3

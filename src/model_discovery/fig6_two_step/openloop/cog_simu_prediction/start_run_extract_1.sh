@@ -1,0 +1,19 @@
+# badham2017deficits_exp1
+# bahrami2020four_exp
+# kool2016when_exp2
+# kool2017cost_exp2
+# collsiöö2023MCPL_exp1
+# popov2023intent_exp1
+# ruggeri2022globalizability_exp1
+# hilbig2014generalized_exp1
+# hebart2023things_exp1
+# tomov2021multitask_exp1
+# wu2018generalisation_exp1
+# enkavi2019adaptivenback_exp1
+
+./run_extract_all_participant_parcel_activations.sh  kool2016when_exp2_csv
+./run_extract_all_participant_parcel_activations.sh  kool2017cost_exp2_csv
+./run_extract_all_participant_parcel_activations.sh  collsiöö2023MCPL_exp1_csv
+./run_extract_all_participant_parcel_activations.sh  popov2023intent_exp1_csv
+./run_extract_all_participant_parcel_activations.sh  badham2017deficits_exp1_csv
+./run_extract_all_participant_parcel_activations.sh  bahrami2020four_exp_csv

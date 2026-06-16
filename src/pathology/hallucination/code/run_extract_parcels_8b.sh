@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+# 仅定义变量并执行，不做任何参数解析
+
+RESULTS_ROOT=/path/to/project_root/safety_explanation/hallucination/results
+COMBO_NAMES=("truthfulqa_Llama-3.1-8B") # "truthfulqa_Llama-3.1-8B" "dolly_close_Llama-3.1-8B" "HaluEval_Llama-3.1-8B" "MedHallu_Llama-3.1-8B" "nq_open_Llama-3.1-8B" "sciq_Llama-3.1-8B" "triviaqa_Llama-3.1-8B" 
+MODEL_NAME="meta-llama/Llama-3.1-8B"
+PARCEL_MAPPING=/path/to/project_root/neural_area/divide_area_by_sae_act/cluster_output_llama_8b_pt/clustering_results_sentence_prep0.01_0.8_svdvar0p80_parcels20_iter50_spatial0.01_nparcels240/latent_parcel_assignments.json
+
+# 循环处理每个 COMBO_NAME
+for COMBO_NAME in "${COMBO_NAMES[@]}"; do
+  echo "正在处理: $COMBO_NAME"
+  
+  python /path/to/project_root/safety_explanation/hallucination/code/extract_parcel_token_activations.py \
+    --results-root "$RESULTS_ROOT" \
+    --combo-name "$COMBO_NAME" \
+    --parcel-mapping "$PARCEL_MAPPING" \
+    --model-name "$MODEL_NAME" \
+    --layers-per-batch 1 \
+    --sae_paths "l0r_8x,l1r_8x,l2r_8x,l3r_8x,l4r_8x,l5r_8x,l6r_8x,l7r_8x,l8r_8x,l9r_8x,l10r_8x,l11r_8x,l12r_8x,l13r_8x,l14r_8x,l15r_8x,l16r_8x,l17r_8x,l18r_8x,l19r_8x,l20r_8x,l21r_8x,l22r_8x,l23r_8x,l24r_8x,l25r_8x,l26r_8x,l27r_8x,l28r_8x,l29r_8x,l30r_8x,l31r_8x" \
+    --sae-release "llama_scope_lxr_8x" \
+    --sae-local-base-dir "/path/to/local_models/Llama3_1-8B-Base-LXR-8x" \
+    --n-devices 2
+    #--skip-existing \
+
+  
+  echo "完成处理: $COMBO_NAME"
+  echo "----------------------------------------"
+done
+
+echo "所有 COMBO_NAME 处理完成！"
+

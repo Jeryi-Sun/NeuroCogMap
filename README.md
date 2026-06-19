@@ -2,6 +2,8 @@
 
 This repository contains the code release for the NeuroCogMap study. It includes scripts for NeuroCogMap construction, pathology analyses, detection and intervention experiments, human cortical alignment analyses, and NeuroCogMap-guided model discovery.
 
+Release version: `v1.0.0`.
+
 Processed data, figure source data, atlas artifacts, and aggregate evaluation summaries are provided separately in the companion Zenodo data package: https://zenodo.org/records/20629857.
 
 ## Included Components
@@ -71,3 +73,12 @@ The companion Zenodo data package contains:
 - Figure 5 and Figure 6 processed analysis inputs
 
 Raw public benchmark datasets and sensitive harmful-instruction or bias-prompt generations are not redistributed in the companion data package.
+
+## License
+
+The NeuroCogMap code release is distributed under the MIT License; see
+`LICENSE`. The vendored `third_party/sae_lens_neurocogmap/` component retains
+its original MIT license notice. Third-party model weights, sparse-autoencoder
+weights, benchmark datasets and companion data are not redistributed by this
+software license and should be obtained from their original providers under
+their respective licences.

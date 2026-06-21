@@ -159,7 +159,7 @@ python "$PROJ/gwMRF_latent_clustering_optimized.py" \
   --model_name "llama_8b_pt_neural" \
 
 
-# python "$PROJ/gwMRF_latent_clustering.py" \
+# python "$PROJ/gwMRF_latent_clustering_optimized.py" \
 #   --output_root "$DATA_ROOT" \
 #   --out_dir "$OUT_ROOT" \
 #   --data_level sentence \

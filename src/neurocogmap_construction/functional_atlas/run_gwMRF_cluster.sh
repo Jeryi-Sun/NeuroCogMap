@@ -93,7 +93,7 @@ DATA_ROOT="$PROJ/qa_sae_output_2b_pt"
 
 cd "$PROJ"
 
-python "$PROJ/gwMRF_latent_clustering_old.py" \
+python "$PROJ/gwMRF_latent_clustering_optimized.py" \
   --output_root "$DATA_ROOT" \
   --out_dir "$OUT_ROOT" \
   --data_level sentence \
@@ -115,7 +115,7 @@ python "$PROJ/gwMRF_latent_clustering_old.py" \
 
 
 
-# python "$PROJ/gwMRF_latent_clustering.py" \
+# python "$PROJ/gwMRF_latent_clustering_optimized.py" \
 #   --output_root "$DATA_ROOT" \
 #   --out_dir "$OUT_ROOT" \
 #   --data_level sentence \

@@ -82,8 +82,8 @@ SCRIPT_PATH="/path/to/project_root/neural_area/divide_area_by_sae_act/get_sae_ac
 MODEL_NAME="meta-llama/Llama-3.1-8B"
 SAE_RELEASE="llama_scope_lxr_8x"
 SAE_LOCAL_BASE_DIR="/path/to/local_models/Llama3_1-8B-Base-LXR-8x"
-# 只示例3层，如需更多层可自行补充
-SAE_PATHS="l0r_8x,l1r_8x,l2r_8x,l3r_8x,l4r_8x,l5r_8x,l6r_8x,l7r_8x,l8r_8x,l9r_8x,l10r_8x,l11r_8x,l12r_8x,l13r_8x,l14r_8x,l15r_8x,l16r_8x,l17r_8x,l18r_8x,l19r_8x,l20r_8x,l21r_8x,l22r_8x,l23r_8x,l24r_8x,l25r_8x,l26r_8x,l27r_8x,l28r_8x,l29r_8x,l30r_8x,l31r_8x,l31r_8x"
+# Llama layers 0-31
+SAE_PATHS="l0r_8x,l1r_8x,l2r_8x,l3r_8x,l4r_8x,l5r_8x,l6r_8x,l7r_8x,l8r_8x,l9r_8x,l10r_8x,l11r_8x,l12r_8x,l13r_8x,l14r_8x,l15r_8x,l16r_8x,l17r_8x,l18r_8x,l19r_8x,l20r_8x,l21r_8x,l22r_8x,l23r_8x,l24r_8x,l25r_8x,l26r_8x,l27r_8x,l28r_8x,l29r_8x,l30r_8x,l31r_8x"
 
 ##############test mode neural########################
 # 数据与输出配置

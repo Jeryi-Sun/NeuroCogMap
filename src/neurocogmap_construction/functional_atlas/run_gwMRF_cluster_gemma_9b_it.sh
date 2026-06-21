@@ -93,7 +93,7 @@ set -euo pipefail
 
 # cd "$PROJ"
 
-# python "$PROJ/gwMRF_latent_clustering.py" \
+# python "$PROJ/gwMRF_latent_clustering_optimized.py" \
 #   --output_root "$DATA_ROOT" \
 #   --out_dir "$OUT_ROOT" \
 #   --data_level sentence \
@@ -123,7 +123,7 @@ DATA_ROOT="$PROJ/qa_sae_output_9b_it"
 
 cd "$PROJ"
 
-python "$PROJ/gwMRF_latent_clustering.py" \
+python "$PROJ/gwMRF_latent_clustering_optimized.py" \
   --output_root "$DATA_ROOT" \
   --out_dir "$OUT_ROOT" \
   --data_level sentence \
@@ -153,7 +153,7 @@ python "$PROJ/gwMRF_latent_clustering.py" \
 # OUT_ROOT="$PROJ/cluster_output_9b_it_neural"
 # DATA_ROOT="$PROJ/qa_sae_output_9b_it_neural"
 
-# python "$PROJ/gwMRF_latent_clustering.py" \
+# python "$PROJ/gwMRF_latent_clustering_optimized.py" \
 #   --output_root "$DATA_ROOT" \
 #   --out_dir "$OUT_ROOT" \
 #   --data_level sentence \

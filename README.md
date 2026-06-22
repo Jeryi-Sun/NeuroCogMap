@@ -6,6 +6,23 @@ Release version: `v1.0.0`.
 
 Processed data, figure source data, atlas artifacts, and aggregate evaluation summaries are provided separately in the companion Zenodo data package: https://zenodo.org/records/20629857.
 
+## Interactive Web Interface
+
+A public companion web interface is available at https://neurocogmap.site/.
+It provides an interactive workspace for exploring NeuroCogMap across
+the functional atlas, structural connectome, cognitive atlas, cognitive
+capabilities, and cognitive hierarchy. The activation-analysis page supports
+model and dataset controls, activation thresholds, coordinated parcel and
+capability charts, and circuit graphs, including visualization of pathology
+signatures across circuit connectivity, parcel activation, capability
+recruitment, and hierarchy-level profiles. The mechanism-analysis page refreshes
+Fig. 3/4-style pathology charts and supports optional LLM-assisted automated
+pathology analysis when users provide their own compatible API configuration.
+
+The web interface is intended for interactive exploration. The GitHub code
+release and the companion Zenodo data package remain the permanent record for
+reproducing the analyses and figures.
+
 ## Included Components
 
 - `src/neurocogmap_construction/`: NeuroCogMap construction code, including functional parcel extraction, structural-connectome construction, and parcel-capability mapping.

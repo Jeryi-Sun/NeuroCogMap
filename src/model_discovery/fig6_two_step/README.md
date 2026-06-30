@@ -26,7 +26,7 @@ Included neural inputs:
 - `openloop/models.py`: original Dual-systems Model and random baseline.
 - `openloop/improved_cog_model_cogneuromap_simple.py`: behaviour-only discovered model.
 - `openloop/improved_cog_model_cogneuromap_full.py`: NeuroCogMap-guided discovered model.
-- `openloop/trainers.py` and `openloop/openloop_individual.py`: fitting and AIC computation.
+- `openloop/trainers.py` and `openloop/openloop_together.py`: Centaur-style fitting and AIC computation.
 
 Held-out two-step task inputs are under `../../../data/model_discovery/two_step/openloop/`.
 
@@ -45,7 +45,7 @@ Included held-out inputs:
 
 1. Use `neural/extract.py` or `neural/extract_with_token_limit.py` to extract model features.
 2. Use `neural/fit.py` for participant-level ridge fitting and ROI-wise prediction evaluation.
-3. Use `openloop/openloop_individual.py` with the three model classes to fit held-out two-step datasets.
+3. Use `openloop/openloop_together.py` with the desired model entries enabled in the `experiments` list to fit held-out two-step datasets.
 4. Compare participant-level AIC values with the provided comparison scripts.
 
 Bulk fit outputs are intentionally excluded from this release.
